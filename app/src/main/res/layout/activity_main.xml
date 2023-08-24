@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewchamada"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="48dp"
+        android:autoText="false"
+        android:backgroundTint="@color/white"
+        android:text="@string/milhoes_de_musicas_a_sua_escolha_n_gr_tis_no_spotify"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textDirection="anyRtl"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#2B2A2A"
+        android:onClick="proxTela"
+        android:text="continuar com um numero de telefone"
+        android:textColorHint="#AAAAAA"
+        app:icon="@drawable/device"
+        app:iconPadding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="proxTela"
+        android:text="Inscreva-se gratis"
+        android:textColor="#000000"
+
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewchamada" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#2B2A2A"
+        android:backgroundTintMode="screen"
+        android:onClick="proxTela"
+        android:text="Continuar com o Facebook"
+        android:textColorHint="#AAAAAA"
+        app:icon="@drawable/face"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#2B2A2A"
+        android:onClick="proxTela"
+        android:text="Continuar com o Apple"
+        android:textColorHint="#AAAAAA"
+        app:icon="@drawable/apple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="#2B2A2A"
+        android:onClick="proxTela"
+        android:text="Continuar com o Google"
+
+        android:textColorHint="#AAAAAA"
+        app:icon="@drawable/google"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewchamada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spotify" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
